@@ -9,7 +9,10 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.6),
+      rgba(39, 32, 68, 0.6)
+    ),
     url("../images/tram.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,12 +61,64 @@ img {
   max-width: 100px;
 }
 
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.6),
+      rgba(39, 32, 68, 0.6)
+    ),
+    url("../images/tram.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  padding: 30px 80px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p,
+li {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  opacity: 70%;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .footer-elements {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 16px;
+}
+
+footer .footer-heading {
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 1;
+}
+
 @media (max-width: 900px) {
   header {
     padding-top: 80px;
   }
   header h1 {
     font-size: 50px;
+  }
+
+  footer p,
+  li {
+    font-size: 12px;
   }
 }
 
@@ -83,5 +138,18 @@ img {
   header h2 {
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  footer {
+    padding: 20px 40px;
+  }
+
+  footer .footer-elements {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  }
+
+  footer .footer-heading {
+    margin: 5px;
   }
 }
